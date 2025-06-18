@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/settings/main.scss">
+  <script src="./styles/settings/script.js" type="module"></script>
+  <link rel="icon" href="./styles/assets/icons/webCrafters--yellow.png">
+  <link rel="stylesheet" href="./styles/settings/breakpoints.scss">
+  <title>WebCrafters</title>
+  
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</head>
+<body>
+  <nav class="nav container ">
+    <img src="./styles/assets/icons/webcrafters.svg" alt="webcrafters logo" >
+            
+
+    <div class="nav__list nav__list--desktop">
+      <p class="nav__item"><a href="#" class="nav__link">Strona główna</a></p>
+      <p class="nav__item"><a href="#" class="nav__link">Usługi</a></p>
+      <p class="nav__item"><a href="#" class="nav__link">O firmie</a></p>
+      <p class="nav__item"><a href="#" class="nav__link">Nasze realizacje</a></p>
+      <p class="nav__item"><a href="#" class="nav__link">Kontakt</a></p>
+    </div>
+
+    <div class="nav__action">
+      <div id="lang__wrap" class="lang lang--inactive">
+        <div id="lang__flag_wrap" class="lang__flag_wrap lang__flag_wrap--inactive">
+          <img src="./styles/assets/icons/poland.svg" alt="Polish" id="polish" class="lang__flag lang__flag--active">
+          <img src="./styles/assets/icons/uk.svg" alt="English" id="english" class="lang__flag lang__flag--inactive">
+        </div>
+          <img src="./styles/assets/icons/arrow--lang.png" alt="arrow" id="lang__arrow" class="lang__arrow lang__arrow--inactive">
+      </div>
+      
+      <a href="#" class="button button--nav--desktop">Wyceń projekt</a>
+      <div class="nav__hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <img src="./styles/assets/icons/hamburger.svg" alt="hamburger">
+      </div>
+    </div>
+
+
+
+<div class="offcanvas offcanvas-end side__menu" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header side__header">
+     <a href="#" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./styles/assets/icons/webcrafters.svg" alt="webcrafters logo" ></a>
+
+    <img src="./styles/assets/icons/close.svg" class="button--close" data-bs-dismiss="offcanvas" aria-label="Close">
+
+  </div>
+  <div class="offcanvas-body side__body">
+    <div class="nav__list nav__list--mobile">
+      <p class="nav__item"><a href="#" class="nav__link">Strona główna</a></p>
+      <p class="nav__item"><a href="#" class="nav__link">Usługi</a></p>
+      <p class="nav__item"><a href="#" class="nav__link">O firmie</a></p>
+      <p class="nav__item"><a href="#" class="nav__link">Nasze realizacje</a></p>
+      <p class="nav__item"><a href="#" class="nav__link">Kontakt</a></p>
+      <a href="#" class="button button--left">Wyceń projekt</a>
+    </div>
+  </div>
+</div>
+
+  </nav> 
+ 
+  <section class="hero">
+    <img src="./styles/assets/icons/webCrafters--border.png" alt="logo-border" class="hero__background">
+    <div class="slogan container">
+      <p class="slogan__text">Tworzymy sklepy oraz strony internetowe</p>
+      <p class="slogan__description">Połączmy Twoją wizję z naszym doświadczeniem i stwórzmy coś razem!</p>
+      <a href="#" class="button button--hero">Nasze realizacje</a>
+    </div>
+
+    <div class="hero__people">
+      <div class="hero__person hero__person--yellow">
+        <img src="./styles/assets/img/danielK.webp" alt="Daniel">
+      </div>
+      <div class="hero__person hero__person--green">
+        <img src="./styles/assets/img/danielS.png" alt="Daniel">
+      </div>
+      <div class="hero__person hero__person--red">
+        <img src="./styles/assets/img/damianN.png" alt="Damian">
+      </div>
+    </div>
+    
+  </section>
+
+  <section id="solution" class="solution">
+    <img src="./styles/assets/icons/webCrafters--yellow.png" alt="logo-fill" class="solution__icon">
+    
+    <a href="#solution" class="solution__arrow">
+      <img src="./styles/assets/icons/arrow.png" alt="arrow" id="solution__arrow" >
+
+    </a>
+    
+    <div class="video__wrap">
+      <video autoplay muted loop class="background-video">
+        <source src="./styles/assets/video/solution.mp4" type="video/mp4">
+      </video>
+      <div class="video__overlay"></div>
+    </div>
+
+    <div class="user_cursor user_cursor--red user_cursor--solution_damian">
+      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none"  class="user_cursor--arrow">
+        <path d="M0.193846 2.15844C0.0216756 1.40814 0.726293 0.75282 1.46216 0.978867L9.01854 3.30007C9.7544 3.52612 9.96961 4.464 9.40592 4.98825L3.61751 10.3717C3.05381 10.8959 2.13398 10.6134 1.96181 9.86306L0.193846 2.15844Z" fill="#FF604C"/>
+      </svg>
+      <p class="user_cursor__name">Damian</p>
+    </div>
+    <div class="user_cursor user_cursor--solution_daniel">
+      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none"  class="user_cursor--arrow">
+        <path d="M0.193846 2.15844C0.0216756 1.40814 0.726293 0.75282 1.46216 0.978867L9.01854 3.30007C9.7544 3.52612 9.96961 4.464 9.40592 4.98825L3.61751 10.3717C3.05381 10.8959 2.13398 10.6134 1.96181 9.86306L0.193846 2.15844Z" fill="#FCCC51"/>
+      </svg>
+      <p class="user_cursor__name">Daniel</p>
+    </div>
+
+ 
+    <div class="container"> 
+      <div class="solution__content">
+        <div class="slogan">
+          <p class="slogan__text">Cyfrowe rozwiązania, które wyróżniają się jakością <br class="slogan__br">i skutecznością</p>
+          <p class="slogan__description">Oferujemy kompleksowe rozwiązania, od tworzenia stron internetowych po zaawansowane aplikacje webowe. Każdy projekt dostosowujemy do unikalnych potrzeb naszych klientów, gwarantując innowacyjność i wysoką jakość.</p>
+        </div> 
+      <div class="swiper swiper-solution">
+        <div class="solution__cards  swiper-wrapper ">
+          <div class="solution__card swiper-slide">
+            <div class="card__img">
+              <img src="./styles/assets/icons/internet.svg" alt="internet">
+            </div>
+            <div class="card__text">
+              <p class="card__title">Strony internetowe</p>
+              <p class="card__description">Aliquam sit amet rhoncus ipsum. Vivamus ac euismod lorem, et dapibus sem.</p>
+            </div>
+          </div>
+          <div class="solution__card swiper-slide">
+            <div class="card__img card__img--green">
+              <img src="./styles/assets/icons/mobile-shopping.svg" alt="internet">
+            </div>
+            <div class="card__text">
+              <p class="card__title">Sklepy internetowe</p>
+              <p class="card__description">Aliquam sit amet rhoncus ipsum. Vivamus ac euismod lorem, et dapibus sem.</p>
+            </div>
+          </div>
+          <div class="solution__card swiper-slide">
+            <div class="card__img card__img--red">
+              <img src="./styles/assets/icons/analysis.svg" alt="internet">
+            </div>
+            <div class="card__text">
+              <p class="card__title">Projekty graficzne</p>
+              <p class="card__description">Aliquam sit amet rhoncus ipsum. Vivamus ac euismod lorem, et dapibus sem.</p>
+            </div>
+          </div>
+          <div class="solution__card swiper-slide">
+            <div class="card__img card__img--blue">
+              <img src="./styles/assets/icons/social-media.svg" alt="internet">
+            </div>
+            <div class="card__text">
+              <p class="card__title">Pozycjonowanie</p>
+              <p class="card__description">Aliquam sit amet rhoncus ipsum. Vivamus ac euismod lorem, et dapibus sem.</p>
+            </div>
+          </div>
+          <div class="solution__card swiper-slide">
+            <div class="card__img card__img--blue">
+              <img src="./styles/assets/icons/social-media.svg" alt="internet">
+            </div>
+            <div class="card__text">
+              <p class="card__title">Pozycjonowanie</p>
+              <p class="card__description">Aliquam sit amet rhoncus ipsum. Vivamus ac euismod lorem, et dapibus sem.</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="solution__dots"></div>
+        </div>
+
+
+        <a href="#" class="button button--solution">Zobacz naszą ofertę</a>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="experience container">
+    <div class="slogan">
+      <p class="slogan__text">Od lat dostarczamy naszym klientom sprawdzone, innowacyjne i dostosowane do ich potrzeb rozwiązania cyfrowe.</p>
+      <p class="slogan__description">Nasz zespół specjalistów tworzy, projektuje i rozwija aplikacje oraz strony internetowe, pomagając markom zaistnieć w świecie cyfrowym na najwyższym poziomie. Skupiamy się na jakości, terminowości i pełnym zaangażowaniu.</p>
+      <a href="#" class="button button--left">Więcej informacji</a>
+    </div>
+    <div class="experience__img_box">
+      <img src="./styles/assets/img/danielK--laptop.webp" alt="danielK--laptop" class="experience__img">
+      <p class="experience__img__description">O firmie</p>
+    </div>
+
+  </section>
+
+  <section class="projects ">
+    <div class="projects__content">
+        <div class="projects__menu ">
+          <p class="menu__title">Nasze realizacje</p>
+          <div class="menu__list">
+            <div class="menu__item"><a href="#japierPapier" class="menu__link">Japier Papier</a></div>
+            <div class="menu__item"><a href="#aquaGO" class="menu__link">AquaGO</a></div>
+            <div class="menu__item"><a href="#nbi" class="menu__link">NBI</a></div>
+            <div class="menu__item"><a href="#mebleBory" class="menu__link">Meble Bory</a></div>
+            <div class="menu__item"><a href="#afterbarber" class="menu__link">Afterbarber</a></div>
+            <div class="menu__item"><a href="#noFluffJobsBlog" class="menu__link">No Fluff Jobs Blog</a></div>
+            <img src="./styles/assets/icons/webCrafters--border-sm.svg" alt="webCrafters--border-sm" class="menu__logo">
+        </div> 
+    </div>
+
+        <div class="projects__list">
+          <div class="project" id="japierPapier">
+            <img src="./styles/assets/img/project/japierpapier1.webp" alt="japierpapier1" class="project__img project__img--japierpapier1">
+            <img src="./styles/assets/img/project/japierpapier2.webp" alt="japierpapier2" class="project__img project__img--japierpapier2">
+            <img src="./styles/assets/img/project/japierpapier-bug.webp" alt="japierpapier-bug" class="project__img project__img--japierpapier-bug">
+            <img src="./styles/assets/img/project/japierpapier-product.webp" alt="japierpapier-product" class="project__img project__img--japierpapier-product">
+            <img src="./styles/assets/img/project/gradient.svg" alt="gradient" class="project__gradient">
+            <div class="project__content">
+              <p class="project__title">Japier Papier</p>
+              <p class="project__description">Sklep internetowy, gdzie rzeczy powstają nabazie odręcznych rysunków</p>
+              <a href="#" class="button button--left">Zobacz case study</a>
+            </div>
+          </div>
+          <div class="project" id="aquaGO">
+            <img src="./styles/assets/img/project/aquago.webp" alt="aquago" class="project__img project__img--aquago">
+            <img src="./styles/assets/img/project/aquago-bg.svg" alt="aquago" class="project__img project__img--aquago-bg">
+            <img src="./styles/assets/img/project/aquago-product.webp" alt="aquago" class="project__img project__img--aquago-product">
+            <img src="./styles/assets/img/project/aquago-dots--green.svg" alt="aquago" class="project__img project__img--aquago-dot1">
+            <img src="./styles/assets/img/project/aquago-dots--green.svg" alt="aquago" class="project__img project__img--aquago-dot2">
+            <img src="./styles/assets/img/project/aquago-dots--white.svg" alt="aquago" class="project__img project__img--aquago-dot3">
+            <img src="./styles/assets/img/project/gradient.svg" alt="gradient" class="project__gradient">
+            <div class="project__content">
+              <p class="project__title">AquaGO</p>
+              <p class="project__description">Sklep internetowy, gdzie rzeczy powstają nabazie odręcznych rysunków</p>
+              <a href="#" class="button button--left">Zobacz case study</a>
+            </div>
+          </div>
+          <div class="project" id="nbi">
+            <img src="./styles/assets/img/project/nbi1.webp" alt="nbi" class="project__img project__img--nbi1">
+            <img src="./styles/assets/img/project/nbi2.webp" alt="nbi" class="project__img project__img--nbi2">
+            <img src="./styles/assets/img/project/nbi-product.webp" alt="nbi" class="project__img project__img--nbi-product">
+            <img src="./styles/assets/img/project/gradient.svg" alt="gradient" class="project__gradient">
+            <div class="project__content">
+              <p class="project__title">NBI</p>
+              <p class="project__description">Sklep internetowy, gdzie rzeczy powstają nabazie odręcznych rysunków</p>
+              <a href="#" class="button button--left">Zobacz case study</a>
+            </div>
+          </div>
+          <div class="project" id="mebleBory">
+            <img src="./styles/assets/img/project/meblebory1.webp" alt="meblebory" class="project__img project__img--mebleBory1">
+
+            <img src="./styles/assets/img/project/meblebory2.webp" alt="meblebory" class="project__img project__img--mebleBory2">
+            <img src="./styles/assets/img/project/meblebory-product.webp" alt="meblebory" class="project__img project__img--mebleBory-product">
+            <img src="./styles/assets/img/project/gradient.svg" alt="gradient" class="project__gradient">
+            <div class="project__content">
+              <p class="project__title">Meble Bory</p>
+              <p class="project__description">Sklep internetowy, gdzie rzeczy powstają nabazie odręcznych rysunków</p>
+              <a href="#" class="button button--left">Zobacz case study</a>
+            </div>
+          </div>
+          <div class="project" id="afterbarber">
+            <img src="./styles/assets/img/project/afterbarber.webp" alt="afterbarber" class="project__img project__img--afterbarber">
+            <img src="./styles/assets/img/project/gradient.svg" alt="gradient" class="project__gradient">
+            <div class="project__content">
+              <p class="project__title">Afterbarber</p>
+              <p class="project__description">Sklep internetowy, gdzie rzeczy powstają nabazie odręcznych rysunków</p>
+              <a href="#" class="button button--left">Zobacz case study</a>
+            </div>
+          </div>
+          <div class="project" id="noFluffJobsBlog">
+            <img src="./styles/assets/img/project/nofluffjobs-bg.svg" class="project__img project__img--nofluffjobs-bg">
+            <img src="./styles/assets/img/project/nofluffjobs1.webp" alt="nofluffjobs" class="project__img project__img--nofluffjobs">
+            
+            <img src="./styles/assets/img/project/gradient.svg" alt="gradient" class="project__gradient">
+            <div class="project__content">
+              <p class="project__title">No Fluff Jobs Blog</p>
+              <p class="project__description">Sklep internetowy, gdzie rzeczy powstają nabazie odręcznych rysunków</p>
+              <a href="#" class="button button--left">Zobacz case study</a>
+            </div>
+          </div>
+    </div>
+  </div>
+    <a href="#" class="button button--projects">Zobacz więcej naszych realizacji</a>
+
+  </section>
+
+  <section class="collab">
+    <div class="video__wrap">
+    <video autoplay muted loop class="background-video">
+      <source src="./styles/assets/video/collab.mp4" type="video/mp4">
+    </video>
+    <div class="video__overlay"></div>
+
+    <div class="container">
+      <img src="./styles/assets/img/nova_capital.webp" alt="nova_capital" class="collab__img">
+        <div class="collab__slogan">
+          <p class="slogan__text">Chcesz zrealizować <br class="collab__br"> z nami projekt?</p>
+          <p class="slogan__description">Wypełnij brief a my przygotujemy dla Ciebie darmową wycenę!</p>
+          <a href="#" class="button button--left">Wypełnij brief</a>
+        </div>    
+    </div>
+    <div class="user_cursor user_cursor--green user_cursor--collab">
+      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none"  class="user_cursor--arrow">
+        <path d="M0.193846 2.15844C0.0216756 1.40814 0.726293 0.75282 1.46216 0.978867L9.01854 3.30007C9.7544 3.52612 9.96961 4.464 9.40592 4.98825L3.61751 10.3717C3.05381 10.8959 2.13398 10.6134 1.96181 9.86306L0.193846 2.15844Z" fill="#00FC8E"/>
+      </svg>
+      <p class="user_cursor__name">Daniel</p>
+    </div>
+  </section>
+
+    <section class="clients">
+      <p class="clients__text">Zaufali nam</p>
+      <div class="clients__list">
+        <img src="./styles/assets/img/clients/novaCapital.webp" alt="novaCapital" class="clients__img">
+        <img src="./styles/assets/img/clients/chabrowski.webp" alt="chabrowski" class="clients__img">
+        <img src="./styles/assets/img/clients/cleantle.webp" alt="cleantle" class="clients__img">
+        <img src="./styles/assets/img/clients/socialMediaNow.webp" alt="socialMediaNow" class="clients__img">
+        <img src="./styles/assets/img/clients/noFluffJobs.webp" alt="noFluffJobs" class="clients__img">
+        <img src="./styles/assets/img/clients/yeti.webp" alt="yeti" class="clients__img">
+        <img src="./styles/assets/img/clients/businessCentreClub.webp" alt="businessCentreClub" class="clients__img">
+        <img src="./styles/assets/img/clients/salutHola.webp" alt="salutHola" class="clients__img">
+        <img src="./styles/assets/img/clients/meadowsTale.webp" alt="meadowsTale" class="clients__img">
+      </div>
+    </section> 
+
+  
+    <section class="technologies">
+      <p class="technologies__title">Technologie, w jakich pracujemy</p>
+      <div class="technologies__icons">
+        <img src="./styles/assets/icons/webCrafters--border-md.svg" alt="">
+
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/html5.png" alt="">
+        </div>
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/react.png" alt="">
+        </div>
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/prestashop.png" alt="">
+        </div>
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/symfony.svg" alt="">
+        </div>
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/javaScript.png" alt="">
+        </div>
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/wordpress.svg" alt="">
+        </div>
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/css3.png" alt="">
+        </div>
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/php.png" alt="">
+        </div>
+        <div class="technologies__icon">
+          <img src="./styles/assets/icons/technologies/wooCommerce.png" alt="">      
+        </div>
+      </div>
+    </section> 
+
+
+  <section class="reference">
+      <img src="./styles/assets/icons/webCrafters--yellow.png" alt="logo-fill" class="reference__icon">
+      <div class="container">
+        <p class="reference__title">Referencje naszych klientów</p>
+        <div class="reference__content">
+
+          <div id="reference__clients" class="reference__clients">
+            <div id="reference__client1" class="reference__client reference__client--active">
+              <p class="client__name">Dobrawa Smoleń</p>
+              <p class="client__company">CEO Euler Księgowość</p>
+            </div>
+            <div id="reference__client2" class="reference__client">
+              <p class="client__name">Łukasz Kaleta</p>
+              <p class="client__company">CEO ART-Tech Solutions</p>
+            </div>
+            <div id="reference__client3" class="reference__client">
+              <p class="client__name">Japier Papier</p>
+              <p class="client__company">CEO Japier Papier</p>
+            </div>
+            <div id="reference__client4" class="reference__client">
+              <p class="client__name">Nova Capital</p>
+              <p class="client__company">Zespół Nova Capital</p>
+            </div>
+          </div>
+          <img src="./styles/assets/icons/quote-left.svg" alt="quote" class="quote__icon">
+          <div class="swiper swiper-reference">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reference__quote">
+                  <p class="quote__text">1Z wielką przyjemnością mogę polecić usługi firmy Webcrafters Studio! Mogliśmy liczyć na fachowość, doradztwo, świetny kontakt i sprawny proces realizacji. Jeśli ktoś się zastanawia czy podjąć współpracę z Webcrafters Studio - nie ma na co czekać :) Z pełnym przekonaniem polecam współpracę z panem Danielem i całą załogą.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reference__quote">
+                  <p class="quote__text">2Z wielką przyjemnością mogę polecić usługi firmy Webcrafters Studio! Mogliśmy liczyć na fachowość, doradztwo, świetny kontakt i sprawny proces realizacji. Jeśli ktoś się zastanawia czy podjąć współpracę z Webcrafters Studio - nie ma na co czekać :) Z pełnym przekonaniem polecam współpracę z panem Danielem i całą załogą.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reference__quote">
+                  <p class="quote__text">3Z wielką przyjemnością mogę polecić usługi firmy Webcrafters Studio! Mogliśmy liczyć na fachowość, doradztwo, świetny kontakt i sprawny proces realizacji. Jeśli ktoś się zastanawia czy podjąć współpracę z Webcrafters Studio - nie ma na co czekać :) Z pełnym przekonaniem polecam współpracę z panem Danielem i całą załogą.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reference__quote">
+                  <p class="quote__text">4Z wielką przyjemnością mogę polecić usługi firmy Webcrafters Studio! Mogliśmy liczyć na fachowość, doradztwo, świetny kontakt i sprawny proces realizacji. Jeśli ktoś się zastanawia czy podjąć współpracę z Webcrafters Studio - nie ma na co czekać :) Z pełnym przekonaniem polecam współpracę z panem Danielem i całą załogą.</p>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+        
+        <div id="reference__dots" class="reference__dots"></div>
+      </div>
+    </section>
+
+
+    <section class="news container">
+    <p class="news__header">Aktualności</p>
+    <div id="news__items" class="news__items">
+      <div class="news__item">
+        <img src="./styles/assets/img/news1.webp" alt="news1" class="news__img">
+        <p class="news__sub_title">Pozycjonowanie</p>
+        <p class="news__title">Lorem ipsum dolor sit amet</p>
+        <p class="news__description">1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, distinctio! Tempora reprehenderit laudantium deserunt facilis enim, officia eveniet error excepturi qui sint impedit distinctio quibusdam, non aliquid molestiae tempore. Debitis!
+        Fugit, odio. Velit ipsam corrupti mollitia, atque quos consectetur odio dicta ex quod cum similique optio possimus suscipit non est deserunt sequi esse accusantium nobis culpa ratione. Possimus, labore deleniti!</p>
+      </div>
+      <div class="news__item">
+        <img src="./styles/assets/img/news2.webp" alt="news1" class="news__img">
+        <p class="news__sub_title">Pozycjonowanie</p>
+        <p class="news__title">Lorem ipsum dolor sit amet</p>
+        <p class="news__description">2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, distinctio! Tempora reprehenderit laudantium deserunt facilis enim, officia eveniet error excepturi qui sint impedit distinctio quibusdam, non aliquid molestiae tempore. Debitis!
+        Fugit, odio. Velit ipsam corrupti mollitia, atque quos consectetur odio dicta ex quod cum similique optio possimus suscipit non est deserunt sequi esse accusantium nobis culpa ratione. Possimus, labore deleniti!</p>
+      </div>
+      <div class="news__item">
+        <img src="./styles/assets/img/news3.webp" alt="news1" class="news__img">
+        <p class="news__sub_title">Pozycjonowanie</p>
+        <p class="news__title">Lorem ipsum dolor sit amet</p>
+        <p class="news__description">3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, distinctio! Tempora reprehenderit laudantium deserunt facilis enim, officia eveniet error excepturi qui sint impedit distinctio quibusdam, non aliquid molestiae tempore. Debitis!
+        Fugit, odio. Velit ipsam corrupti mollitia, atque quos consectetur odio dicta ex quod cum similique optio possimus suscipit non est deserunt sequi esse accusantium nobis culpa ratione. Possimus, labore deleniti!</p>
+      </div>
+      <div class="news__item">
+        <img src="./styles/assets/img/news4.webp" alt="news1" class="news__img">
+        <p class="news__sub_title">Pozycjonowanie</p>
+        <p class="news__title">Lorem ipsum dolor sit amet</p>
+        <p class="news__description">4 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, distinctio! Tempora reprehenderit laudantium deserunt facilis enim, officia eveniet error excepturi qui sint impedit distinctio quibusdam, non aliquid molestiae tempore. Debitis!
+        Fugit, odio. Velit ipsam corrupti mollitia, atque quos consectetur odio dicta ex quod cum similique optio possimus suscipit non est deserunt sequi esse accusantium nobis culpa ratione. Possimus, labore deleniti!</p>
+      </div>
+    </div>
+    <a href="#" class="button button--news">Zobacz więcej</a>
+
+  </section>
+
+    <footer class="footer ">
+
+    <div class="video__wrap">
+      <video autoplay muted loop class="background-video">
+        <source src="./styles/assets/video/footer.mp4" type="video/mp4">
+      </video>
+      <div class="video__overlay">
+
+      </div>
+      </div>
+
+
+
+
+
+      <div class="container">
+        <div class="footer__content">
+          <div class="slogan">
+            <p class="slogan__description">Bezpłatne konsultacje ws. strony lub sklepu internetowego</p>
+            <p class="slogan__text">SAY <span class="slogan__text--gradient">HI!</span></p>
+            <a href="#" class="button button--footer">Napisz do nas</a>
+          </div>
+          <div class="user_cursor user_cursor--green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 10 11" fill="none"  class="user_cursor--arrow">
+              <path d="M0.193846 2.15844C0.0216756 1.40814 0.726293 0.75282 1.46216 0.978867L9.01854 3.30007C9.7544 3.52612 9.96961 4.464 9.40592 4.98825L3.61751 10.3717C3.05381 10.8959 2.13398 10.6134 1.96181 9.86306L0.193846 2.15844Z" fill="#00FC8E"/>
+            </svg>
+            <p class="user_cursor__name">Daniel</p>
+          </div>
+          <hr class="hr">
+          <div class="footer__details">
+            <img src="./styles/assets/img/webCrafters--white.png" alt="webcrafters logo">
+            
+            <div class="footer__contact">
+              <a href="tel:+48 888 134 244" class="footer__contact footer__contact--phone">
+                <img src="./styles/assets/icons/phone.svg" alt="phone">+48 888 134 244
+              </a>
+              <a href="mailto:kontakt@webcrafters.studio" class="footer__contact footer__contact--email">
+                <img src="./styles/assets/icons/email.svg" alt="email">kontakt@webcrafters.studio
+              </a>
+        </div>
+
+      </div>
+      
+      <div class="footer__list">
+        <p class="footer__item"><a href="#" class="footer__link">Strona główna</a></p>
+        <p class="footer__item"><a href="#" class="footer__link">Usługi</a></p>
+        <p class="footer__item"><a href="#" class="footer__link">O firmie</a></p>
+        <p class="footer__item"><a href="#" class="footer__link">Nasze realizacje</a></p>
+        <p class="footer__item"><a href="#" class="footer__link">Kontakt</a></p>
+      </div>
+      
+    </div>
+  </div>
+  </footer>
+  <p class="footer__info">Wszelkie prawa zastrzeżone WebCrafters Studio 2024</p>  
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,910 @@
+@use './variables'as *;
+
+@media (max-width: 1620px) {
+  .solution{
+    &__icon{
+      top: -15%;
+    }
+  }
+  .projects{
+    .project{
+      height: 600px ;
+      &__img{
+        &--aquago{
+          left: 30%;
+          width: 60%;
+        }
+        &--aquago-product{
+          width: 40%;
+        }
+        &--nbi1{
+          right: 3%;
+          width: 55%;
+        }
+        &--nbi2{
+          width: 50%;
+        }
+        &--nbi-product{
+          width: 45%;
+        }
+        &--mebleBory1{
+          left: 10%;
+          width: 16.5%;
+        }
+        &--mebleBory2{
+          bottom: 0;
+          right: 10%;
+          width: 55%;
+        }
+        &--mebleBory-product{
+          bottom: 0;
+          right: 0;
+        }
+        &--afterbarber{
+          width: 58%;
+        }
+
+        &--nofluffjobs{
+          width: 65%;
+        }
+        &--nofluffjobs-bg{
+          width: 65%;
+        }
+      }
+    }
+  }
+  .reference{
+    .quote{
+      &__icon{
+        left: 23%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero{
+    margin-top: 130px;
+    .slogan{
+      &__text{
+        font-size:50px;
+        width: 57%;
+      }
+      &__description{
+        width: 35%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .user_cursor{
+    &--solution_damian{
+      top: 30%;
+      right: 6.4%;
+
+    }
+    &--solution_daniel{
+      height: fit-content;
+      bottom: 10%;
+      left: 8.1%;
+    }
+  }
+  .solution{
+    &__card{
+      padding: 0 34px;
+    }
+  }
+  .projects{
+
+
+    &__list{
+      row-gap: 30px;
+    }
+    .project{
+      height: 500px ;
+
+      &__content{
+        margin-left: 30px;
+        margin-bottom: 24px;
+        & .button{
+          padding: 15px 20px;
+        }
+      }
+      &__description{
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .collab{
+    &__slogan{
+      width: 50%;
+    }
+    .container{
+      padding: 50px;
+    }
+    .slogan{
+      &__text{
+        font-size: 40px;
+      }
+    }
+    &__img{
+      z-index: 1;
+    }
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+  .button {
+    padding: 15px 30px;
+  }
+  .nav{
+    &__list{
+      column-gap: 30px;
+    }
+    &__action{
+      column-gap: 30px;
+      height: 40px;
+    }
+  }
+  .hero{
+    margin-top: 100px;
+    .slogan{
+      &__text{
+        font-size:40px;
+      }
+    }
+  }
+  .user_cursor{
+    &--solution_damian{
+      display: none;
+    }
+    &--solution_daniel{
+      display: none;
+    }
+  }
+  .solution{
+    &__icon{
+      top: -10%;
+    }
+    &__content{
+      .slogan{
+        flex-direction: column;
+        &__text{
+          font-size: 45px;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        &__description{
+          width: 100%;
+        }
+        &__br{
+          display: none;
+        }
+      }
+    }
+    .card{
+      padding: 0 34px;
+    }
+  }
+  .projects{
+    &__content{
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
+    &__menu{
+      width: 100%;
+      margin: 0 auto;
+      max-width: 960px;
+      
+    }
+    .menu{ 
+      &__list{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+      }
+      &__link{
+        padding: 3px 100px 4px 41px;
+      }
+    }
+    &__list{
+      width: 100%;
+      max-width: 960px;
+      display: grid;
+      grid-template-columns:  2fr 2fr;
+      gap: 30px;
+    }
+    .project{
+      height: 500px ;
+      &__content{
+        margin-left: 30px;
+        margin-bottom: 24px;
+        & .button{
+          padding: 15px 20px;
+        }
+      }
+      &__img{
+        &--japierpapier1{
+          left: 0;
+          width: 65%;
+        }
+        &--japierpapier2{
+          width: 45%
+        }
+
+        &--japierpapier-bug{
+          top: 3.2%;
+          left: 5.7%;
+          scale: 0.8;
+        }
+        &--japierpapier-product{
+          right: -5%;
+          width: 70%;
+          z-index: 2;
+        }
+        &--aquago{
+          right: -5%;
+          width: 80%;
+        }
+        &--aquago-product{
+          width: 50%;
+          bottom: 10%;
+        }
+        &--nbi1{
+          right: 3%;
+          width: 75%;
+        }
+        &--nbi2{
+          width: 65%;
+        }
+        &--nbi-product{
+          width: 60%;
+        }
+        &--mebleBory1{
+          left: 5%;
+          width: 20%;
+        }
+        &--mebleBory2{
+          bottom: 0;
+          right: -5%;
+          width: 75%;
+        }
+        &--afterbarber{
+          width: 75%;
+        }
+
+        &--nofluffjobs{
+          width: 85%;
+        }
+        &--nofluffjobs-bg{
+          width: 85%;
+        }
+      }
+    }
+  }
+  .collab{
+    &__slogan{
+      width: 50%;
+    }
+    .container{
+      padding: 50px;
+    }
+    .slogan{
+      &__text{
+        font-size: 35px;
+      }
+      &__description{
+        margin-bottom: 20px;
+      }
+    }
+    &__img{
+      width: 45%;
+    }
+  }
+  .reference{
+    &__icon{
+      top: -10%;
+    }
+    &__quote{
+      width: 90%;
+      padding-left: 10px;
+    }
+    .quote{
+      &__text{
+        font-size: 25px;
+      }
+      &__icon{
+        scale: 0.7;
+        top: 30%;
+        left: 20%;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .button {
+    &--nav--desktop{
+      display: none !important;
+    }
+  }
+  .nav{
+    justify-content: space-between;
+    &__list{
+      column-gap: 30px;
+      &--desktop{
+        display: none;
+      }
+      &--mobile{
+        display: flex;
+      }
+    }
+    &__action{
+      column-gap: 30px;
+      height: 40px;
+    }
+    &__hamburger{
+      display: flex;
+    }
+  }
+  .lang{
+    &__arrow{
+      right: -50%;
+    }
+  }
+  .hero{
+    margin-top: 80px;
+    padding-bottom: 120px;
+    .slogan{
+      &__text{
+        font-size:40px;
+        width: 60%;
+      }
+      &__description{
+        width: 45%;
+        margin-bottom: 10px;
+      }
+    }
+    &__people{
+      
+      right: -10%;
+    }
+    &__person{
+      width: 40%;
+      &:last-child{
+        display: none;
+      }
+    }
+  }
+  .solution{
+    &__icon{
+      top: -5%;
+    }
+    .slogan{
+      &__text{
+        font-size: 35px;
+      }
+    }
+    &__dots{
+      margin: 40px auto;
+    }
+
+  }
+  .experience{
+    flex-direction: column;
+    width: 100%;
+    row-gap: 30px;
+    .slogan{
+      width: 100%;
+    }
+    &__img_box{
+
+      width: 80%;
+    }
+  }
+  .projects{
+    &__menu{
+      max-width: 720px;
+    }
+
+    &__list{
+      max-width: 720px;
+      display: flex;
+    }
+    .project{
+      height: 500px ;
+      &__img{
+        &--aquago{
+          left: 30%;
+          width: 60%;
+        }
+        &--aquago-product{
+          width: 40%;
+        }
+        &--nbi1{
+          right: 3%;
+          width: 55%;
+        }
+        &--nbi2{
+          width: 50%;
+        }
+        &--nbi-product{
+          width: 45%;
+        }
+        &--mebleBory1{
+          left: 10%;
+          width: 16.5%;
+        }
+        &--mebleBory2{
+          bottom: 0;
+          right: 10%;
+          width: 55%;
+        }
+        &--mebleBory-product{
+          bottom: 0;
+          right: 0;
+        }
+        &--afterbarber{
+          width: 58%;
+        }
+
+        &--nofluffjobs{
+          width: 65%;
+        }
+        &--nofluffjobs-bg{
+          width: 65%;
+        }
+      }
+    }
+  }
+  .collab{
+    height: 320px;
+    &__slogan{
+      width: 100%;
+    }
+    &__br{
+      display: none;
+    }
+    .slogan{
+      &__text{
+        width: 100%;
+        font-size: 35px;
+      }
+      &__description{
+        margin-bottom: 30px;
+      }
+    }
+    &__img{
+      display: none;
+    }
+  }
+  .clients{
+    &__text{
+      font-size: 100px;
+    }
+  }
+  .technologies{
+    &__title{
+      font-size: 40px;
+    }
+  }
+  .reference{
+    height: fit-content;
+    &__title{
+      width: 100%;
+      padding: 50px 0 30px;
+    }
+    &__quote{
+      width: 100%;
+      padding: 0;
+    }
+    .quote{
+      &__text{
+        font-size: 25px;
+        padding: 0;
+      }
+      &__icon{
+        scale: 0.6;
+        top: 15%;
+        left: 0;
+      }
+    }
+    &__content{
+      flex-direction: column-reverse;
+      align-items: end;
+    }
+    &__client{
+      display: none;
+      &--active{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+      }
+      &s{
+        flex-direction: row;
+        align-items: end;
+      }
+    }
+    &__dots{
+      padding-bottom: 20px;
+    }
+  }
+  .news{
+    &__items{
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+    }
+  }
+  .footer{
+    .slogan{
+      &__text{
+        font-size: 150px;
+        margin: 0;
+      }
+    }
+    &__contact{
+      margin-left: 20px;
+      & img{
+        margin-right: 9px;
+      }
+      &:hover{
+        color: $white;
+        text-decoration: none;
+      }
+    }
+    &__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: start;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero{
+    &__background{
+      height: 100%;
+    }
+    .slogan{
+      &__text{
+        font-size:40px;
+        width: 100%;
+      }
+      &__description{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    &__people{
+      display: none;
+    }
+  }
+  .solution{
+    &__content{
+      padding-top: 50px;
+    }
+  }
+  .experience{
+    
+    .slogan{
+      &__text{
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+    }
+    &__img_box{
+
+      width: 90%;
+    }
+  }
+  .projects{
+    .project{
+      height: 400px;
+    }
+    &__menu{
+      max-width: 540px;
+    }
+
+    &__list{
+      max-width: 540px;
+    }
+    .menu{
+      &__link{
+        width: fit-content;
+        padding-right: 0;
+        padding-left: 0;
+        &:hover{
+          
+          padding-right: 0;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .technologies{
+    &__title{
+      font-size: 35px;
+    }
+    &__icon{
+      width: 65px;
+      height: 65px;
+      &>img{
+        scale: 0.8;
+      }
+    }
+  }
+  .reference{
+    &__title{
+      font-size: 35px;
+    }
+    .quote{
+      &__text{
+        font-size: 20px;
+      }
+      &__icon{
+        display: none;
+      }
+    }
+
+  }
+  .news{
+    &__items{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+  .footer{
+    height: fit-content;
+    &__content{
+      padding: 50px 0;
+    }
+    .slogan{
+      &__text{
+        font-size: 100px;
+      }
+      &__description{
+        font-size: 18px;
+      }
+    }
+    .hr{
+      margin: 40px;
+      width: 80%;
+    }
+    .user_cursor{
+      display: none;
+    }
+    &__contact{
+      flex-direction: column;
+      align-items: end;
+      &>a{
+        align-items: center;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero{
+    padding-bottom: 80px;
+    .slogan{
+      &__text{
+        font-size: 30px;
+      }
+    }
+  }
+  .solution{
+    &__icon{
+      top: -3%;
+    }
+    &__content{
+      height: fit-content;
+    }
+
+    .slogan{
+      &__text{
+        font-size: 40px;
+      }
+    }
+    &__dots{
+      margin: 30px auto;
+    }
+    .card{
+      &__text{
+        margin-top: 15%;
+      }
+
+    }
+  }
+  .experience{
+    &__img{
+      &__description{
+        font-size: 80px;
+        transform: translate(40%, -105%) rotate(-90deg);
+      }
+      &_box{
+        width: 100%;
+      }
+    }
+  }
+  .projects{
+    &__menu{
+      max-width: 100%;
+    }
+
+    &__list{
+      max-width: 100%;
+    }
+  }
+  .collab{
+    height: 350px;
+    .slogan{
+      &__text{
+        font-size: 30px;
+      }
+      &__description{
+        margin-bottom: 30px;
+      }
+    }
+    .container{
+      padding: 10%;
+    }
+  }
+  .clients{
+    &__text{
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,-100%);
+      color: rgba(18, 42, 55, 0.20);
+      font-size: 58px;
+    }
+  }
+  .technologies{
+    &__title{
+      font-size: 30px;
+    }
+  }
+  .footer{
+    .slogan{
+      &__text{
+        font-size: 80px;
+      }
+    }
+    .hr{
+      margin: 30px;
+    }
+    &__contact{
+      margin: 0;
+    }
+    .video__wrap{
+      width: 100%;
+      border-radius: 15px;
+    }
+  }
+}
+
+@media (max-width: 484px) {
+  .solution{
+    .slogan{
+      &__text{
+        font-size: 35px;
+      }
+      &__description{
+        width: 100%;
+      }     
+    }
+    &__dots{
+      margin: 30px auto;
+    }
+    .card{
+      &__text{
+        margin-top: 15%;
+      }
+
+    }
+  }
+  .experience{
+    &__img{
+      max-height: 110%;
+      width: auto;
+
+      &__description{
+        font-size: 70px;
+        height: fit-content;
+        line-height: 60%;
+        transform: translate(40%, -270%) rotate(-90deg);
+      }
+      &_box{
+        max-height: 380px;
+      }
+    }
+  }
+  .collab{
+    height: 320px;
+    .slogan{
+      &__description{
+        margin-bottom: 20px;
+      }
+    }
+    .user_cursor{
+      display: none;
+    }
+  }
+  .projects{
+    .project{
+      height: 300px;
+    }
+    .menu__title{
+      padding-left: 20px;
+    }
+  }
+  .technologies{
+    &__title{
+      font-size: 25px;
+    }
+    &__icon{
+      width: 55px;
+      height: 55px;
+      &>img{
+        scale: 0.6;
+      }
+    }
+  }
+  .reference{
+    &__icon{
+      top:-5%;
+    }
+  }
+  .footer{
+    .slogan{
+      &__text{
+        font-size: 80px;
+        margin-bottom: 10px;
+      }
+    }
+    &__details{
+      justify-content: flex-end;
+      &>img{
+        display: none;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 380px) {
+  .solution{
+    .slogan{
+      margin: 0;
+      &__text{
+        font-size: 35px;
+      }
+      &__description{
+        width: 100%;
+      }     
+    }
+
+  }
+  .projects{
+    .project{
+      height: 250px;
+    }
+  }
+  .technologies{
+    &__title{
+      font-size: 20px;
+    }
+    &__icon{
+      width: 45px;
+      height: 45px;
+      &>img{
+        scale: 0.6;
+      }
+    }
+  }
+}
